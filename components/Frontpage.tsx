@@ -50,9 +50,10 @@ const Frontpage = () => {
 
       {/* Radial Gradient to prevent sharp edges */}
       <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(450px_300px_at_top,transparent_20%,white)]"></div>
+     
     </div>
-    <ShootingStars />
-    <StarsBackground />
+     <ShootingStars className="absolute inset-0 pointer-events-none" />
+      <StarsBackground  className="absolute inset-0 pointer-events-none"/>
   </div>
   )
 }
