@@ -55,7 +55,7 @@ export function TabsDemo() {
       title: "Skills",
       value: "Skills",
       content: (
-        <div className="flex flex-wrap justify-center gap-16 p-4 h-100 bg-gradient-to-br py-16 from-purple-700 to-violet-900 mx-10 flex-grow-1 flex-basic-0 lg:py-10">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-16 p-4 h-96 bg-gradient-to-br from-blue-600 to-violet-900 mx-10 flex-grow-1 flex-basic-0 lg:py-10">
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col items-center justify-center group">
               <div className="transition transform hover:scale-110">{skill.icon}</div>
@@ -72,7 +72,7 @@ export function TabsDemo() {
         title: "Education",
         value: "Education",
         content: (
-          <div className="flex flex-wrap justify-center gap-6 p-4 h-100 bg-gradient-to-br from-purple-700 to-violet-900 flex-grow-1 flex-basic-0 mx-10">
+          <div className="flex flex-wrap justify-center gap-6 p-4 h-96 bg-gradient-to-br pb-2 from-blue-600 to-violet-900 flex-grow-1 flex-basic-0 mx-10">
            
               <div className="flex flex-col items-center justify-center group">
                 <div className="transition transform hover:scale-110"> <FaGraduationCap size={40} className="text-blue-500" /></div>
@@ -102,7 +102,7 @@ export function TabsDemo() {
         title: "Achievement",
         value: "Achievement",
         content: (
-          <div className="flex flex-wrap justify-center gap-16 p-4 h-100 bg-gradient-to-br py-32 from-purple-700 to-violet-900 mx-10 flex-grow-1 flex-basic-0 ">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-28 p-4 h-96 pb-2 bg-gradient-to-br from-blue-500 to-violet-900 flex-grow-1 flex-basic-0 mx-10 lg:py-10">
             {achievements.map((ach, index) => (
               <div key={index} className="flex flex-col items-center justify-center group">
                 <div className="transition transform hover:scale-110">{ach.icon}</div>
@@ -125,7 +125,7 @@ export function TabsDemo() {
 
   return (
     <div className="w-screen">
-      <div className="relative flex flex-col max-w-5xl mx-auto w-full items-center justify-center">
+      <div className="relative flex flex-col max-w-5xl mx-auto w-full items-center justify-center ">
         <Tabs tabs={tabs} />
       </div>
     </div>
